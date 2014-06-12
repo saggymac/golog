@@ -1,0 +1,10 @@
+# Running the DB
+
+postgres -D /usr/local/var/postgres
+
+postgres -D /usr/local/var/postgres >logfile 2>&1 &
+
+pg_ctl start -D /usr/local/var/postgres -l logfile
+
+
+
